@@ -1,0 +1,39 @@
+/* Mobile Screens */
+@media(max-width: 599px) {
+    .user_data{
+        width: 60%;
+    }
+    .info{
+        width: 60%;
+    }
+
+    .data{
+        text-align: center;
+    }
+}
+
+/* Large Screens */
+@media(min-width: 901px){
+    .user_data{
+        width: 45%;
+    }
+    .info{
+        width: 45%;
+    }
+    .user_data{
+        border-right: 3px solid whitesmoke;
+    }
+}
+
+/* Medium Screens */
+@media(min-width: 600px) and (max-width: 900px){
+    .user_data{
+        width: 45%;
+    }
+    .info{
+        width: 45%;
+    }
+    .user_data{
+        border-right: 3px solid whitesmoke;
+    }
+}

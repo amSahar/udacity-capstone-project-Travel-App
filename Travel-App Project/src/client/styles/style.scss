@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Josefin+Slab:wght@488&display=swap');
+
+body {
+  
+  background-color: whitesmoke;
+  font-family: Comfortaa;
+}
+
+h1{
+  color: #008080;
+  text-align: center;
+}
+
+.form{
+  /*display: flex;
+  justify-content: center;*/
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-flow: wrap;
+}
+
+.user_data label , .user_data label {
+  display: block;
+  margin-top: 20px;
+}
+
+.user_data input {
+  width: 90%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #535c68;
+}
+
+.user_data{
+  background-color: #70a1ff;
+  
+  height: auto;
+  
+  padding-bottom: 50px;
+}
+
+.info{
+  background-color: #70a1ff;
+  height: auto;
+  display: inline;
+}
+
+.text {
+  margin-left: 5%;
+  margin-top: 90px;
+}
+
+.data {
+  margin: 50px 5% 5% 5%;
+}
+
+.sub-head{
+  color: white;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.submit {
+  border: #ff793f;
+  outline: none;
+  background-color: #ff793f;
+  width: 90%;
+  height: 35px;
+  margin-top: 30px;
+  border-radius: 20px;
+  color:white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #ad5027;
+}
+
+.submit:active{
+  background-color: #5f2a14;
+}
+
+.picture{
+  height: 50%;
+  width: 80%;
+  display:block;
+  margin: auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#endDate{
+  margin-bottom: 7%;
+}
+
+.end {
+  text-align: center;
+  color: white;
+}
+
+.city-duration, .temp, .time{
+  margin-bottom: 2%;
+}

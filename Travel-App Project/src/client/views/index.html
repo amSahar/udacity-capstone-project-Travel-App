@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Travel App</title>
+</head>
+<body>
+    <h1>Travel App</h1>
+    <div class="form">
+      <div class="user_data">
+        <div class="text">
+            <label>Type your destination</label>
+            <input id="city" type="text" placeholder="city or country name">
+            <label>Check-in date</label>
+            <input id="startDate" type="date">
+            <label>Check-out date</label>
+            <input id="endDate" type="date">
+            <button class="submit" id="submit">Search</button>
+        </div>
+      </div>
+        <div class="info">
+            <div class="data">
+                <div class="sub-head"> Your Destination Information</div>
+                <div id="city-duration" class="city-duration"></div>
+                <div id="temp" class="temp"></div>
+                <div id="time" class="time"></div>
+                <img id="picture" class="picture">
+                <div id="end" class="end"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // service workers 
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+
+</body>
+</html>
